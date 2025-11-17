@@ -1,0 +1,224 @@
+ * {
+      box-sizing: border-box;
+    }
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.blocoDeTexto{
+  height: auto;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top:30vh;
+  left: 0;
+  z-index: 100;
+}
+
+
+/*PROGRESS-BAR*/
+.progress-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.progress-bar.active {
+  background-color: white;
+}
+/*PROGRESS-BAR*/
+
+
+/*SWIPER-SLIDE*/
+.swiper-slide {
+  background-color: #738462;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(219, 42, 42);
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slide-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+/*SWIPER-SLIDE*/
+
+
+
+/*DEGRADE*/
+.testeDegradeCima {
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+}
+
+.testeDegradeBaixo {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8) , rgba(0,0,0,1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  z-index: 50;
+}
+
+.testeDegradeBaixo2 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8) , rgba(0,0,0,1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  z-index: 50;
+}
+/*DEGRADE*/
+
+
+/*TEXTO*/
+.tituloMateria {
+  position: relative;
+  left: 0%;
+  padding: 5% 5%;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+
+  opacity: 0.6;
+  color: #beddc0;
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.texto {
+  position: absolute;
+  
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+
+  bottom: 10px;
+  left: 0;
+  padding: 5% 5%;
+  
+  width: 100%;
+  z-index: 50;
+
+  opacity: 0.6;
+  color: azure;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 100;
+
+  z-index: 50;
+}
+
+.assinCitacao {
+  position: absolute;
+  
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+
+  bottom: 10px;
+  left: 0;
+  padding: 5% 5%;
+  
+  width: 100%;
+  z-index: 50;
+
+  opacity: 1;
+  color: azure;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 100;
+
+  z-index: 50;
+}
+
+.gravata {
+  position: relative;
+  
+  margin-top: 20px;
+  margin-top: 20px;
+
+  bottom: 10px;
+  left: 0;
+  padding: 5% 5%;
+  
+  width: 100%;
+
+  opacity: 0.6;
+  color: azure;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+
+  z-index: 50;
+}
+
+.citacao {
+  position: relative;
+  
+  margin-top: 20px;
+  margin-top: 20px;
+
+  bottom: 10px;
+  left: 0;
+  padding: 5% 0%;
+  
+  width: 100%;
+
+  opacity: 0.6;
+  color: azure;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 400;
+
+  z-index: 50;
+}
+/*TEXTO*/
+
+
+
