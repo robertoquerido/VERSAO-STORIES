@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 
-
 <html lang="pt-BR">
 <head>
-
-  <!-- 
-  Don't use this in production:
-
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  Don't use this in production: 
-  -->
 
   <meta charset="UTF-8">
   <title>Stories com Swiper</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
   <!-- fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 
   <!-- CSS Interno -->
   <link rel="stylesheet" href="./css/estilo.css" />
 
-  
 </head>
 <body>
 
 
-
   <!-- Progress Bars -->
   <div class="progress-container" id="progress-container"></div>
-
 
 
   <!-- Swiper container -->
@@ -196,7 +179,7 @@
         <img src="./assets/tela10.jpg" alt="Imagem 2" class="slide-image">
         <div class="texto">
           
-          <p>
+          <p class="subtitulo">
             Estratégia em todos os municípios 
           </p>
 
@@ -310,23 +293,10 @@
 
 
 
-
-
-
-
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="./script/script.js"></script>
-  
-  <script>
-    // Truque para ocultar a barra de endereço do Safari no carregamento
-    window.addEventListener("load", function() {
-      setTimeout(function(){
-        window.scrollTo(0, 1);
-      }, 0);
-    });
-  </script>
+
 
 </body>
 
