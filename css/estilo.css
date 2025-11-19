@@ -12,7 +12,6 @@ body {
 
 @supports (-webkit-touch-callout: none) {
  html, body {
-  background-color: #ce5656;
   position: fixed;
   margin: 0;
   padding: 0;
