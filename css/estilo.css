@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  background: #000;
+  /*background: #000;*/
+  background: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -363,3 +364,454 @@ html, body {
 
 }
 /* ------------------------------------    */
+
+
+/* IMAGENS MAT01 ----------------------    */
+.imagem01_mat01_rev01{
+  background-color: #738462;
+  background-image: url("../assets/dktp_tela6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem02_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem03_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem04_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+/* IMAGENS MAT01 ----------------------    */
+
+
+
+
+
+/* VERSAO DESKTOP ---------------------------- */
+/* VERSAO DESKTOP ---------------------------- */
+/* VERSAO DESKTOP ---------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top:10px;
+}
+
+.margin-bot-10 {
+  padding-bottom:10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size:24px;
+  font-weight:400;
+  text-transform: uppercase;
+  color:black;
+  padding:0;
+  margin:0;
+}
+
+#parallax-world-of-ugg h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90px;
+  letter-spacing:10px;
+  text-align:center;
+  color: #beddc0;
+  font-weight:700;
+  /*text-transform:uppercase;*/
+  z-index:10;
+  opacity:.9;
+  margin: 0 !important;
+}
+
+#parallax-world-of-ugg h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  /*line-height:0;*/ /*estava deixando todo o texto em apenas uma linha*/
+  font-weight:700;
+  /*letter-spacing:8px;
+  text-transform: uppercase;*/
+  color: #4c644e;
+}
+
+#parallax-world-of-ugg p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 !important;
+  padding-top: 30px;
+}
+
+.asterisco {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 !important;
+  padding-top: 30px;
+}
+
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 60px;
+  margin:0 auto;
+  text-align:center;
+}
+
+#parallax-world-of-ugg .title h1 {
+  font-size:35px;
+  letter-spacing:8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 120px 60px 60px 60px;
+  width:80%;
+  margin:0 auto;
+  text-align:justify;
+}
+
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+
+#parallax-world-of-ugg .blockBox {
+  background: rgb(140, 157, 148);
+  padding: 40px 15% 60px 15%;
+  width: 100%;
+  margin:0 auto;
+  text-align:justify;
+}
+
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.70;
+}
+
+
+
+/* Section - Parallax */
+/**************************/
+
+/* CAPA */
+/* CAPA */
+#parallax-world-of-ugg .parallax-capa {
+  padding-top: 65vh;
+  padding-bottom: 10vh;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.imagemParallax_img1_mat01_ed01{
+  background-image: url(../assets/dktp_img01_mat01_ed01.jpg);
+}
+.imagemParallax_img1_mat02_ed01{
+  background-image: url(../assets/dktp_img01_mat02_ed01.jpg);
+}
+.imagemParallax_img1_mat03_ed01{
+  background-image: url(../assets/dktp_img01_mat03_ed01.jpg);
+}
+
+.parallax-capa p{
+  height:10h;
+  /*background-color: #3b8595;*/
+  color:#ffffff;
+  text-align: center;
+}
+
+.parallax-capa h2{
+  height: 15vh;
+  /*background-color: #0c363f;*/
+  color:#ffffff;
+  text-align: center;
+}
+
+/* Overlay */
+#parallax-world-of-ugg .parallax-capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8));
+}
+
+/* garantir que o conteúdo fique por cima */
+#parallax-world-of-ugg .parallax-capa h2,
+#parallax-world-of-ugg .parallax-capa p {
+  position: relative;
+  z-index: 2;
+}
+/* CAPA */
+/* CAPA */
+
+
+/* PARALLAX MEIO TEXTO */
+/* PARALLAX MEIO TEXTO */
+#parallax-world-of-ugg .parallax-meiotexto {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-meiotexto_semdegra {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.imagemParallax_img02_mat01_ed01{
+  background-image: url(../assets/dktp_img02_mat01_ed01.jpg);
+}
+.imagemParallax_img03_mat01_ed01{
+  background-image: url(../assets/dktp_img03_mat01_ed01.jpg);
+}
+
+
+
+.imagemParallax_img02_mat03_ed01{
+  background-image: url(../assets/dktp_img02_mat03_ed01.jpg);
+}
+.imagemParallax_img03_mat03_ed01{
+  background-image: url(../assets/dktp_img03_mat03_ed01.jpg);
+}
+.imagemParallax_img04_mat03_ed01{
+  background-image: url(../assets/dktp_img04_mat03_ed01.jpg);
+}
+.imagemParallax_img05_mat03_ed01{
+  background-image: url(../assets/dktp_img05_mat03_ed01.jpg);
+}
+
+
+#parallax-world-of-ugg .parallax-meiotexto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+   /* rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),*/
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4));
+}
+
+#parallax-world-of-ugg .parallax-meiotexto p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../assets/dktp_tela6.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-meiotexto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+   /* rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),*/
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.9));
+}
+
+#parallax-world-of-ugg .meiotexto-two p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+#parallax-world-of-ugg .parallax-meiotexto .assinaturaDeclara {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+#parallax-world-of-ugg .legendaParallax {
+  font-weight:'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 13px !important;
+  margin: 0 !important;
+  padding-top: 2vh;
+  width: 100vw;
+  padding-left: 15vw !important;
+  padding-right: 15vw !important;
+  color: #000000;
+  text-align: right;
+  position: relative;
+  line-height: 1.2;
+}
+
+/* PARALLAX MEIO TEXTO */
+/* PARALLAX MEIO TEXTO */
+
+
+
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom:1px solid black;
+  width: 150px;
+  margin:0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px; width:620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px; width:420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size:30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-capa, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-meiotexto {
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width:290px;
+  }
+}
+/* -------------------------------------------- */
+
+
+.grafico {
+  background-image: url(../assets/dktp_img02_mat01_ed01.jpg);
+  background-size:cover;
+  background-position: center;
+  height: 65vh;
+  width: auto;
+  display: block;
+  margin: 0;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.mostrarMateria {
+  display: none;
+}
+
+
+
+
+
+
+
