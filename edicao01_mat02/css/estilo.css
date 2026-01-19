@@ -430,8 +430,8 @@ html, body {
 
 #parallax-world-of-ugg h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 90px;
-  letter-spacing:10px;
+  font-size: 6vw;
+  letter-spacing: 0;
   text-align:center;
   color: #beddc0;
   font-weight:700;
@@ -439,6 +439,7 @@ html, body {
   z-index:10;
   opacity:.9;
   margin: 0 !important;
+  line-height: 5vw;
 }
 
 #parallax-world-of-ugg h3 {

@@ -530,7 +530,7 @@ html, body {
 /* CAPA */
 /* CAPA */
 #parallax-world-of-ugg .parallax-capa {
-  background-image: url(../assets/dktp_img01_mat04_ed01.jpg);
+  background-image: url(../assets/dktp_img01_mat05_ed01.jpg);
   padding-top: 65vh;
   padding-bottom: 10vh;
   overflow: hidden;
@@ -613,18 +613,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.imagemParallax_img02_mat04_ed01{
-  background-image: url(../assets/dktp_img02_mat04_ed01.jpg);
+.imagemParallax_img02_mat05_ed01{
+  background-image: url(../assets/dktp_img02_mat05_ed01.jpg);
 }
-.imagemParallax_img03_mat04_ed01{
-  background-image: url(../assets/dktp_img03_mat04_ed01.jpg);
+.imagemParallax_img03_mat05_ed01{
+  background-image: url(../assets/dktp_img03_mat05_ed01.jpg);
 }
-.imagemParallax_img04_mat04_ed01{
-  background-image: url(../assets/dktp_img04_mat04_ed01.jpg);
-}
-.imagemParallax_img05_mat04_ed01{
-  background-image: url(../assets/dktp_img05_mat04_ed01.jpg);
-}
+
 
 #parallax-world-of-ugg .parallax-meiotexto::before {
   content: "";
