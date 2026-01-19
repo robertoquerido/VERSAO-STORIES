@@ -1,0 +1,784 @@
+/* ------------------------------------     */
+/* - esse é o modelo para os outros ---     */
+/* ------------------------------------     */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+@supports (-webkit-touch-callout: none) {
+  html, body {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .texto {
+    padding: 10vh 5vw 5vh 5vw;
+    padding-bottom: calc(12vh + env(safe-area-inset-bottom));
+  }
+}
+
+html, body {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.blocoDeTexto{
+  height: auto;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5vh;
+  left: 0;
+  z-index: 100;
+}
+/* ------------------------------------     */
+
+
+/* --------------------------------- */
+/* MOBILE */
+.mobile {
+  display: block;
+}
+
+/* DESKTOP */
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  html, body {
+    position: static !important;
+    height: auto !important;
+    overflow: auto !important;
+  }
+}
+/* --------------------------------- */
+
+
+/* ------------------------------------    PROGRESS-BAR*/
+.progress-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.progress-bar.active {
+  background-color: white;
+}
+/* ------------------------------------    PROGRESS-BAR*/
+
+
+/* ------------------------------------    SWIPER-SLIDE*/
+.swiper-slide {
+  background-color: #738462;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(219, 42, 42);
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slide-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+/* ------------------------------------    SWIPER-SLIDE*/
+
+
+
+/* ------------------------------------    DEGRADE*/
+.testeDegradeCima {
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+}
+
+.testeDegradeBaixo {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8) , rgba(0,0,0,1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  z-index: 50;
+}
+
+.testeDegradeBaixo2 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8) , rgba(0,0,0,1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  z-index: 50;
+}
+/* ------------------------------------    DEGRADE*/
+
+
+/* ------------------------------------    TEXTO*/
+.tituloMateria {
+  position: relative;
+  left: 0%;
+  padding: 5vh 0vw;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+  opacity: 0.6;
+  color: #beddc0;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.tituloDesktop {
+  position: relative;
+  left: 0%;
+  padding: 5vh 0vw;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+  opacity: 0.6;
+  color: #beddc0;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.subtitulo {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+  opacity: 0.6;
+  color: #beddc0;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.subtituloDesktop {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  z-index: 50;
+  opacity: 0.6;
+  color: #beddc0;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.texto {
+  background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0),
+      rgba(0,0,0.5),
+      rgba(0,0,0,1),
+      rgba(0,0,0,1)
+    );
+  position: absolute;
+  margin-top: 20px;
+  font-size: 18px;
+  bottom: 0;
+  left: 0;
+  padding: 10vh 5vw 5vh 5vw;
+  padding-bottom: calc(5vh + env(safe-area-inset-bottom));
+  width: 100%;
+  z-index: 50;
+  opacity: 0.7;
+  color: azure;
+  text-align: left;
+  font-size: clamp(14px, 4vw, 32px);
+  font-weight: 400;
+  z-index: 50;
+}
+
+
+.textoDesktop {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0.5), rgba(0,0,0,1) , rgba(0,0,0,1));
+  position:relative;
+  bottom: 0;
+  left: 0;
+  padding: 10vh 10vw 5vh 10vw;
+  width: 100%;
+  z-index: 50;
+  opacity: 0.7;
+  color: azure;
+  text-align: left;
+  font-size: clamp(22px, 1vw, 30px);
+  line-height: 1.4;
+  font-weight: 300;
+  z-index: 50;
+}
+
+.assinCitacao {
+  position: absolute;
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  bottom: 10vh;
+  left: 0;
+  padding: 5% 5%;
+  width: 100%;
+  z-index: 50;
+  opacity: 1;
+  color: azure;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 100;
+  z-index: 50;
+}
+
+.gravata {
+  position: relative;
+  margin-top: 10px;
+  bottom: 10px;
+  left: 0;
+  padding: 5vh 5vw 0vh 5vw;
+  width: 100%;
+  opacity: 0.6;
+  color: azure;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  z-index: 50;
+}
+
+.citacao {
+  position: relative;
+  margin-top: 20px;
+  margin-top: 20px;
+  bottom: 10px;
+  left: 0;
+  padding: 5% 0%;
+  width: 100%;
+  bottom: 30vh;
+  opacity: 0.6;
+  color: azure;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 400;
+  z-index: 50;
+}
+
+.citacaoDesktop {
+  position: relative;
+  bottom: 10px;
+  left: 0;
+  padding: 5% 10%;
+  width: 100%;
+  opacity: 0.6;
+  color: azure;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  z-index: 50;
+}
+/* ------------------------------------    TEXTO*/
+
+
+/* ------------------------------------    
+@media (min-width: 200px) and (max-width: 299px) {
+  .texto {
+    font-size: clamp(14px, 4vw, 32px);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+  .texto {
+    font-size: clamp(14px, 4vw, 32px);
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .texto {
+    font-size: clamp(14px, 4vw, 32px);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .texto {
+    font-size: clamp(14px, 4vw, 32px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .texto {
+    font-size: clamp(14px, 4vw, 32px);
+  }
+}
+
+@media (min-width: 760px) and (max-width: 5000px) {
+
+}
+/* ------------------------------------    */
+
+
+/* IMAGENS MAT01 ----------------------    */
+.imagem01_mat01_rev01{
+  background-color: #738462;
+  background-image: url("../assets/dktp_tela6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem02_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem03_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+
+.imagem04_mat01_rev01{
+  background-color: #738462;
+  height: 70vh;
+  width: 100%;
+}
+/* IMAGENS MAT01 ----------------------    */
+
+
+
+
+
+/* VERSAO DESKTOP ---------------------------- */
+/* VERSAO DESKTOP ---------------------------- */
+/* VERSAO DESKTOP ---------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top:10px;
+}
+
+.margin-bot-10 {
+  padding-bottom:10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size:24px;
+  font-weight:400;
+  text-transform: uppercase;
+  color:black;
+  padding:0;
+  margin:0;
+}
+
+#parallax-world-of-ugg h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90px;
+  letter-spacing:10px;
+  text-align:center;
+  color: #beddc0;
+  font-weight:700;
+  /*text-transform:uppercase;*/
+  z-index:10;
+  opacity:.9;
+  margin: 0 !important;
+}
+
+#parallax-world-of-ugg h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  /*line-height:0;*/ /*estava deixando todo o texto em apenas uma linha*/
+  font-weight:700;
+  /*letter-spacing:8px;
+  text-transform: uppercase;*/
+  color: #4c644e;
+}
+
+#parallax-world-of-ugg p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 !important;
+  padding-top: 30px;
+}
+
+.asterisco {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 !important;
+  padding-top: 30px;
+}
+
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 60px;
+  margin:0 auto;
+  text-align:center;
+}
+
+#parallax-world-of-ugg .title h1 {
+  font-size:35px;
+  letter-spacing:8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 120px 60px 60px 60px;
+  width:80%;
+  margin:0 auto;
+  text-align:justify;
+}
+
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+
+#parallax-world-of-ugg .blockBox {
+  background: rgb(140, 157, 148);
+  padding: 40px 15% 60px 15%;
+  width: 100%;
+  margin:0 auto;
+  text-align:justify;
+}
+
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.70;
+}
+
+
+
+/* Section - Parallax */
+/**************************/
+
+/* CAPA */
+/* CAPA */
+#parallax-world-of-ugg .parallax-capa {
+  background-image: url(../assets/dktp_img01_mat04_ed01.jpg);
+  padding-top: 65vh;
+  padding-bottom: 10vh;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.parallax-capa p{
+  height:10h;
+  /*background-color: #3b8595;*/
+  color:#ffffff;
+  text-align: center;
+}
+
+.parallax-capa h2{
+  height: 15vh;
+  /*background-color: #0c363f;*/
+  color:#ffffff;
+  text-align: center;
+}
+
+/* Overlay */
+#parallax-world-of-ugg .parallax-capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8));
+}
+
+/* garantir que o conteúdo fique por cima */
+#parallax-world-of-ugg .parallax-capa h2,
+#parallax-world-of-ugg .parallax-capa p {
+  position: relative;
+  z-index: 2;
+}
+/* CAPA */
+/* CAPA */
+
+
+/* PARALLAX MEIO TEXTO */
+/* PARALLAX MEIO TEXTO */
+#parallax-world-of-ugg .parallax-meiotexto {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-meiotexto_semdegra {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.imagemParallax_img02_mat04_ed01{
+  background-image: url(../assets/dktp_img02_mat04_ed01.jpg);
+}
+.imagemParallax_img03_mat04_ed01{
+  background-image: url(../assets/dktp_img03_mat04_ed01.jpg);
+}
+.imagemParallax_img04_mat04_ed01{
+  background-image: url(../assets/dktp_img04_mat04_ed01.jpg);
+}
+.imagemParallax_img05_mat04_ed01{
+  background-image: url(../assets/dktp_img05_mat04_ed01.jpg);
+}
+
+#parallax-world-of-ugg .parallax-meiotexto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+#parallax-world-of-ugg .parallax-meiotexto p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../assets/dktp_tela6.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-meiotexto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.9));
+}
+
+#parallax-world-of-ugg .meiotexto-two p {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+#parallax-world-of-ugg .parallax-meiotexto .assinaturaDeclara {
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 !important;
+  padding-top: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #beddc0;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  opacity: 1;
+}
+
+#parallax-world-of-ugg .legendaParallax {
+  font-weight:'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 13px !important;
+  margin: 0 !important;
+  padding-top: 2vh;
+  width: 100vw;
+  padding-left: 15vw !important;
+  padding-right: 15vw !important;
+  color: #000000;
+  text-align: right;
+  position: relative;
+  line-height: 1.2;
+}
+
+/* PARALLAX MEIO TEXTO */
+/* PARALLAX MEIO TEXTO */
+
+
+
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+  border-bottom:1px solid black;
+  width: 150px;
+  margin:0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {
+    font-size:30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-capa, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-meiotexto {
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width:290px;
+  }
+}
+/* -------------------------------------------- */
+
+
+
+/* ------------------------------ */
+/* estilos especificos da materia */
+
+/* estilos especificos da materia */
+/* ------------------------------ */
+
+
+
+
+
+
