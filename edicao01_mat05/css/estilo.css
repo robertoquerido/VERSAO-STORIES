@@ -76,6 +76,21 @@ html, body {
     position: static !important;
     height: auto !important;
     overflow: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (min-width: 600px){
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  html, body {
+    position: static !important;
+    height: auto !important;
+    overflow: auto !important;
+    overflow-x: hidden !important;
   }
 }
 /* --------------------------------- */
@@ -101,6 +116,19 @@ html, body {
 
 .progress-bar.active {
   background-color: white;
+}
+
+.fechar_storie {
+  background-image: url('../assets/fechar_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  opacity: 0.7;
+  z-index: 100;
 }
 /* ------------------------------------    PROGRESS-BAR*/
 
@@ -234,19 +262,33 @@ html, body {
     );
   position: absolute;
   margin-top: 20px;
-  font-size: 18px;
   bottom: 0;
   left: 0;
   padding: 10vh 5vw 5vh 5vw;
   padding-bottom: calc(5vh + env(safe-area-inset-bottom));
   width: 100%;
-  z-index: 50;
   opacity: 0.7;
   color: azure;
   text-align: left;
   font-size: clamp(14px, 4vw, 32px);
   font-weight: 400;
   z-index: 50;
+}
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  .texto {
+    font-size: clamp(14px, 2vw, 32px);}
+}
+@media screen and (max-width: 800px) and (min-width: 700px) {
+  .texto {
+    font-size: clamp(14px, 2.5vw, 32px);}
+}
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  .texto {
+    font-size: clamp(14px, 3vw, 32px);}
+}
+@media screen and (max-width: 600px) and (min-width: 480px) {
+  .texto {
+    font-size: clamp(14px, 3.5vw, 32px);}
 }
 
 

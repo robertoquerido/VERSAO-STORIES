@@ -1,0 +1,46 @@
+
+/* -- HEADER ---------- */
+.header {
+  background:#000000;
+  height: 6.5vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: height 0.8s ease;
+}
+
+.edicao {
+  color: rgba(240, 248, 255, 0.3);
+  height: 1vw;
+  width: 20vw;
+  position: relative;
+  margin-top: 1vw;
+  margin-right: 10vw;
+  align-self: baseline;
+  text-align: right;
+}
+.contrapontoEdicao {
+  color: rgba(240, 248, 255, 0.329);
+  height: 1vw;
+  width: 20vw;
+  position: relative;
+  margin-top: 1vw;
+  margin-left: 10vw;
+}
+
+.logoRevista {
+  background-image: url(../assets/logo_nossa_defensoria.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 6vh;
+  width: 30vw;
+  position: relative;
+  margin-top: 0.5vh;
+  flex: auto;
+  z-index: 51;
+  cursor: pointer;
+}
+/* -- HEADER ---------- */

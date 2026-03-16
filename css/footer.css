@@ -1,0 +1,188 @@
+
+
+/* FOOTER GERAL */
+
+.footer {
+  background: rgb(54, 78, 52);
+  height: 10vw;
+  width: 100vw;
+  position: relative;
+  margin-top: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+
+  bottom: 0;
+  z-index: 100;
+}
+@media (max-width: 430px) {
+  .footer {
+    height: 50vw;
+    width: 100vw;
+    margin-top: 0.5vw;
+    background-position: top;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    flex-wrap: wrap;
+    align-content: center;
+    display: flex;
+  }
+}
+
+
+.logoDPEPR {
+  background-image: url(../assets/logoDPRPR.png);
+  background-size: cover;
+  height: 5vw;
+  width: 12.5vw;
+  position: relative;
+  margin-top: 1vw;
+  align-self: baseline;
+  top: 1.5vw;
+  text-align: right;
+  z-index: 102;
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 430px) {
+  .logoDPEPR {
+    height: 14vw;
+    width: 34.5vw;
+    align-self: center;
+  }
+}
+
+.contatos {
+  height: 2vw;
+  width: 16vw;
+  position: relative;
+  margin-top: 1vw;
+  align-self: baseline;
+  text-align: right;
+  z-index: 102;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 430px) {
+  .contatos {
+    height: 5vw;
+    width: 50vw;
+    display: flex;
+  }
+}
+
+.contatosInsta {
+  background-image: url(../assets/instaIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self: baseline;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+.contatosFace {
+  background-image: url(../assets/faceIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self: baseline;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+.contatosWtsp {
+  background-image: url(../assets/wtspIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self: baseline;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+.contatosYoutube {
+  background-image: url(../assets/youtubeIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self:center;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+.contatosLinkedin {
+  background-image: url(../assets/linkedinIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self:center;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+.contatosTiktok {
+  background-image: url(../assets/TiktokIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2vw;
+  width: 2vw;
+  position: relative;
+  align-self:center;
+  text-align: right;
+  align-items: center;
+  z-index: 103;
+  cursor: pointer;
+}
+
+.logoDPEPR:hover,
+.contatosInsta:hover,
+.contatosTiktok:hover,
+.contatosYoutube:hover,
+.contatosWtsp:hover,
+.contatosFace:hover,
+.contatosLinkedin:hover {
+  filter: brightness(1.5);
+  transition: filter 1s ease;
+}
+
+@media (max-width: 430px) {
+  .contatosInsta,
+  .contatosTiktok,
+  .contatosYoutube,
+  .contatosWtsp,
+  .contatosFace,
+  .contatosLinkedin {
+    height: 5vw;
+    width: 5vw;
+  }
+  .contatos {
+    margin-top: 7vw;
+  }
+  .footer {
+    justify-content: space-evenly
+  }
+}
