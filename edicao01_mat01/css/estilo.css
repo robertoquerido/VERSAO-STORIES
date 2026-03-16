@@ -7,6 +7,10 @@ body {
   margin: 0;
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
+
+  padding:20px;
+  padding-bottom:60px;
+  box-sizing:border-box;
 }
 
 @supports (-webkit-touch-callout: none) {
