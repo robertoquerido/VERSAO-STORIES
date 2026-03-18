@@ -336,7 +336,7 @@ html, body {
   margin-top: 10px;
   bottom: 0px;
   left: 0;
-  padding: 5vh 5vw 0vh 5vw;
+  padding: 8vh 5vw 0vh 5vw;
   width: 100%;
   opacity: 0.6;
   color: azure;
@@ -406,8 +406,35 @@ html, body {
   background-color: #738462;
   height: 70vh;
   width: 100%;
+  
 }
 /* IMAGENS MAT01 ----------------------    */
+
+/* ---- passa para o  lado ----------*/
+.passeParaoLado {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url('../assets/seta.png');
+  background-size: 15%;
+  position: absolute;
+  height: 100svh;
+  width: 95%;
+  margin-right: 500px;
+  left: 0;
+  top: 0;
+  z-index: 20000;
+  opacity: 0.5;
+
+  animation: pulsar 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0.3; }
+}
+/* ---- passa para o  lado ----------*/
+
 
 
 
